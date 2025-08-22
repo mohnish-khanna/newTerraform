@@ -1,0 +1,32 @@
+# Environment Configuration
+environment = "dev"
+aws_region  = "us-east-1"
+
+# Network Configuration
+vpc_cidr = "10.0.0.0/16"
+
+# Database Configuration
+db_instance_class    = "db.t3.micro"
+db_allocated_storage = 20
+db_name             = "wisemint_db"
+db_username         = "wisemint_user"
+db_password         = "your-secure-password-here"
+
+# ECS Configuration
+ecs_cpu           = 512
+ecs_memory        = 1024
+ecs_desired_count = 2
+app_port          = 8388
+
+# Domain and SSL Configuration
+domain_name         = "api.yourdomain.com"
+ssl_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
+
+# External Service Configuration
+plaid_client_id     = "your-plaid-client-id"
+plaid_client_secret = "your-plaid-client-secret"
+plaid_client_name   = "WiseMint Portfolio Analysis"
+alpha_vantage_api_key = "your-alpha-vantage-api-key"
+
+# Email Configuration
+email_from = "noreply@yourdomain.com"
